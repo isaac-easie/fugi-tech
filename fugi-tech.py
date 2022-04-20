@@ -16,7 +16,7 @@ while true == '':
     print ('\n'+tool_name)
     os.system('date')
     t.sleep(1)
-    print (Fore.RED'\nThe tools password is☞ 0000'+'\n')
+    print (Fore.RED+'\nThe tools password is☞ 0000'+'\n')
     print ('Enter the tools password ')
     t.sleep(1)
     tool_pw = getpass.getpass('password :'.upper())
@@ -31,7 +31,7 @@ while true == '':
          print('tool is unlocked ')
          t.sleep(1)
          os.system('clear')
-         tool_list = input(tool_name+Fore.GREEN'''\n
+         tool_list = input(tool_name+Fore.GREEN+'''\n
 
  [::] Select An Attack For Your Victim [::]
 
